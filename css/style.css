@@ -2183,7 +2183,7 @@ template {
     min-height: 860px;
   }
 }
-@media (max-width: 3600px) {
+@media (max-width: 360px) {
   .packages-card__wrapper {
     min-height: 880px;
   }
