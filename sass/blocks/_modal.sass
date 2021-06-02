@@ -1,0 +1,88 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 10
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 493px
+    max-height: 100vh
+    overflow-y: auto
+    padding: 33px 88px
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    z-index: 11
+    transform: translate(-50%, -50%)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    // overflow-y: scroll
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__title
+    margin-top: 0
+    margin-bottom: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    text-align: center
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap      
+  &__input
+    flex-basis: 100%
+    margin-top: 15px  
+    &:first-child
+      margin-top: 0
+  &__message
+    flex-basis: 100%
+    height: 123px
+    margin-top: 15px  
+  &__button
+    width: 160px
+    min-height: 48px 
+    padding: 18px
+    border-radius: 4px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary             
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-basis: 100%
+      margin-top: 16px
+  &__info
+    display: block
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0  

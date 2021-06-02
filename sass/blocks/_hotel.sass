@@ -1,0 +1,217 @@
+.hotel  
+  padding-top: 15px
+  padding-bottom: 70px
+  &-info  
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 20px
+    &__rating      
+      margin-top: 5px
+    &__offer
+      margin-left: 14px
+      margin-top: 4px
+    &__name
+      margin-top: 2px
+      margin-bottom: 0
+    &__description
+      margin: 6px 0
+  &__button
+    display: flex
+    font-family: "Mulish", sans-serif
+    width: 90px 
+    min-height: 30px 
+    justify-content: center
+    align-items: center
+    text-align: center
+    text-decoration: none   
+    background-color: $primary
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    border-radius: 4px
+    margin-top: 20px
+          
+  &-name
+    font-size: 24px
+    line-height: 30px
+    
+  &-wrapper 
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &-description
+    margin: 0    
+    font-size: 12px
+    line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between    
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &-slider
+    width: 728px
+    height: 450px
+    &__item
+      width: 100%
+      height: 100%
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      // &::after
+      //   content: ''
+      //   position: absolute
+      //   width: 100%
+      //   height: 100%
+      //   top: 0
+      //   bottom: 0
+      //   right: 0
+      //   left: 0
+      //   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+      //   z-index: 10
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer    
+      background: transparent
+      outline: 0
+      &--next
+        right: 18px
+        background-image: url(../img/arrow-next.svg)
+        background-repeat: no-repeat 
+        background-position: center 
+        background-size: 10px      
+      &--prev 
+        left: 18px
+        background-image: url(../img/arrow-prev.svg) 
+        background-repeat: no-repeat 
+        background-position: center 
+        background-size: 10px 
+  
+.stars
+  display: flex
+  flex-basis: 100%
+  &__item
+    padding-top: 2px
+    margin-right: 2px
+.offer  
+  font-size: 10px
+  line-height: 13px
+  padding: 4px 9px
+  background-color: $primary
+  border-radius: 3px
+  color: $light
+.rating
+  max-width: 65px
+  min-height: 45px
+  text-align: center
+  color: $light
+  background-color: $primary
+  border-radius: 4px
+  &__text
+    font-size: 8px
+    line-height: 10px
+  &__counter
+    font-size: 12px
+    line-height: 16px
+  &__countersub 
+    font-weight: 600px    
+    font-size: 10px
+    line-height: 12px  
+.swiper-container
+  margin: 0
+
+.booking
+  font-family: 'Nunito', sans-serif
+  border-radius: 8px
+  width: 350px
+  min-height: 210px
+  padding: 28px
+  color: $light
+  background: $dark  
+  &__info 
+    display: flex 
+    justify-content: space-between  
+    margin-bottom: 5px 
+  &__price
+    display: flex
+    flex-direction: column  
+  &__start
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room       
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between 
+    margin-bottom: 8px   
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__number-room
+    padding-left: 1px
+  &__description
+    margin-left: 12px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-decoration: none
+    color: $light
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num
+    margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    padding: 0
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    border: none
+    background-color: $primary
+    color: $light
+    cursor: pointer
+    outline: none
+    
+.map  
+  width: 347px
+  height: 213px  
+  border-radius: 10px
+  overflow: hidden
+
+  
+    
+    
+
